@@ -7,7 +7,7 @@ import requests
 def update():
     docker_hub_prefix = 'dockerkleon/k8s'
 
-    url = 'https://registry.hub.docker.com/v2/repositories/dockerkleon/k8s/tags/'
+    url = 'https://registry.hub.docker.com/v2/repositories/dockerkleon/k8s/tags?page_size=1024'
 
     r = requests.get(url)
     if int(r.status_code) != 200:
