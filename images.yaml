@@ -1,0 +1,4 @@
+images:
+- name: busybox
+  status: synced
+- name: k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1 
