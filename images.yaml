@@ -1,5 +1,8 @@
 images:
-- name: busybox
+- image: dockerkleon/k8s:busybox
+  name: busybox
   status: synced
-- name: k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1
+- image: dockerkleon/k8s:k8s.gcr.io-kubernetes-dashboard-amd64-v1.10.1
+  name: k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1
   status: synced
+- name: k8s.gcr.io/kubernetes-dashboard-amd64:v2.0.0

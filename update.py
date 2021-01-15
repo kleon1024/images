@@ -31,6 +31,7 @@ def update():
         relabel = image.replace('/', '-').replace(':', '-')
         if relabel in tags:
             d['images'][i]['status'] = 'synced'
+            d['images'][i]['image'] = docker_hub_prefix + ':' + relabel
             newly_synced.append(image)
         else:
             sync_pending.append(image)
