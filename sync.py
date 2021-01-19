@@ -8,7 +8,7 @@ auth_config = {
     'password': os.getenv('DOCKER_PASSWORD'),
 }
 
-docker_hub_prefix = 'dockerkleon/k8s'
+docker_hub_prefix = 'registry.cn-shanghai.aliyuncs.com/pai_product/k8s'
 
 client = docker.from_env()
 
