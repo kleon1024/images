@@ -4,7 +4,7 @@ from update import update
 
 update()
 
-docker_hub_prefix = 'dockerhubkleon/k8s'
+docker_hub_prefix = 'dockerkleon/k8s'
 
 with open('images.yaml') as f:
     images = yaml.load(f.read(), Loader=yaml.BaseLoader)['images']
