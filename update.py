@@ -1,45 +1,36 @@
-import yaml
 import subprocess
 import os
-import requests
 
+from utils import PREFIX, STATUS
+from utils import get_remote_tags, gen_tag, load_images, save_images
 
 def update():
-    docker_hub_prefix = 'dockerkleon/k8s'
+    tags = get_remote_tags()
+    d = load_images('images.yaml')
 
-    url = 'https://registry.hub.docker.com/v2/repositories/dockerkleon/k8s/tags?page_size=1024'
-
-    r = requests.get(url)
-    if int(r.status_code) != 200:
-        print('Failed connect to {}'.format(url))
-
-    tags = set()
-    for result in r.json()['results']:
-        tags.add(result['name'])
-
-    with open('images.yaml') as f:
-        d = yaml.load(f.read(), Loader=yaml.BaseLoader)
-
+    images_set = set()
     newly_synced = []
     sync_pending = []
-    for i, entry in enumerate(d['images']):
+    for i, entry in enumerate(d):
         image = entry['name']
-        status = entry.get('status', None)
+        status = entry.get(STATUS, None)
+        if image in images_set:
+            del d[i]
+        images_set.add(image)
         if status is not None:
             continue
 
-        relabel = image.replace('/', '-').replace(':', '-')
+        relabel = gen_tag(image)
         if relabel in tags:
-            d['images'][i]['status'] = 'synced'
-            d['images'][i]['image'] = docker_hub_prefix + ':' + relabel
+            d[i][STATUS] = 'synced'
+            d[i][STATUS + '_image'] = PREFIX + ':' + relabel
             newly_synced.append(image)
         else:
             sync_pending.append(image)
 
-    with open('images.yaml', 'w') as f:
-        yaml.dump(d, f)
+    save_images(d)
 
-    print('Successfully synced {} images, {} images are pending'.format(len(newly_synced), len(sync_pending)))
+    print('Successfully synced {} images, {} images are pending, {} by total'.format(len(newly_synced), len(sync_pending), len(images_set)))
 
 if __name__ == '__main__':
     update()

@@ -1,13 +1,15 @@
-import sys
+import os
 import yaml
+import subprocess
+import sys
 
 from utils import PREFIX, STATUS
 from utils import gen_tag, load_images
 
+images = load_images()
+
 synced_images = set()
 pending_images = set()
-
-images = load_images()
 
 for image in images:
     if image.get(STATUS, None) == 'synced':
@@ -17,16 +19,15 @@ for image in images:
 
 images = sys.argv[1:] if len(sys.argv) > 1 else [image['name'] for image in images]
 
-out_str = ''
 for image in images:
     if image not in synced_images:
         print('Unsynced image: {}'.format(image))
         exit(0)
+
     relabel = gen_tag(image)
     relabeled_image = PREFIX + ":" + relabel
-    out_str += 'sudo docker pull {}\n'.format(relabeled_image)
-    out_str += 'sudo docker tag {} {}\n'.format(relabeled_image, image)
-
-print(out_str)
-
+    image = image.replace('/', '\/')
+    relabeled_image = relabeled_image.replace('/', '\/')
+    print('find . -name "*.yaml" | xargs sed -i -e \'s/{}/{}/g\''.format(image, relabeled_image))
+    print('echo "replacing {} with {}"'.format(image, relabeled_image))
 

@@ -1,3 +1,5 @@
 docker
 pyyaml
 requests
+aliyun-python-sdk-core
+aliyun-python-sdk-cr

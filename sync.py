@@ -2,34 +2,28 @@ import docker
 import yaml
 import subprocess
 import os
+import sys
 
-auth_config = {
-    'username': os.getenv('DOCKER_USERNAME'),
-    'password': os.getenv('DOCKER_PASSWORD'),
-}
-
-docker_hub_prefix = 'registry.cn-shanghai.aliyuncs.com/pai_product/k8s'
+from utils import AUTH_CONFIG, STATUS, PREFIX
+from utils import gen_tag, split_image, load_images
 
 client = docker.from_env()
 
-with open('images.yaml') as f:
-    images = yaml.load(f.read(), Loader=yaml.BaseLoader)['images']
+images = load_images()
 
 for entry in images:
     image = entry['name']
-    status = entry.get('status', None)
+    status = entry.get(STATUS, None)
     if status is not None:
         continue
-    relabel = image.replace('/', '-').replace(':', '-')
-    print("Remapping {} to {}".format(image, docker_hub_prefix + ":" + relabel))
-    image_frags = image.split(':')
-    image_repo = image_frags[0]
-    image_tag = None
-    if len(image_frags) == 2:
-        image_tag = image_frags[1]
+    relabel = gen_tag(image)
+    relabel_image = PREFIX + ":" + relabel
+    image_repo, image_tag = split_image(image)
 
-    image = client.images.pull(image_repo, tag=image_tag)
-    image.tag(docker_hub_prefix, tag=relabel)
-    status = client.images.push(docker_hub_prefix, tag=relabel, auth_config=auth_config)
-    print(status)
+    print("Remapping {} to {}".format(image, relabel_image))
+    cmd = ['sudo', 'docker', 'pull', image]
+    subprocess.run(cmd)
+    cmd = ['sudo', 'docker', 'tag', image, relabel_image]
+    subprocess.run(cmd)
+    client.images.push(PREFIX, tag=relabel, auth_config=AUTH_CONFIG)
 
