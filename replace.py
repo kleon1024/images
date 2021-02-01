@@ -28,6 +28,6 @@ for image in images:
     relabeled_image = PREFIX + ":" + relabel
     image = image.replace('/', '\/')
     relabeled_image = relabeled_image.replace('/', '\/')
-    print('find . -name "*.yaml" | xargs sed -i -e \'s/{}/{}/g\''.format(image, relabeled_image))
+    print('find . -name "*.yaml" | xargs sed -i \'\' -e \'s/{}/{}/g\''.format(image, relabeled_image))
     print('echo "replacing {} with {}"'.format(image, relabeled_image))
 

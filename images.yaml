@@ -261,5 +261,14 @@ images:
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:nginx-latest
   name: nginx:latest
 - aliyun: synced
-  aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-knative-releases-knative.dev-net-istio-cmd-webhook
+  aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-knative-releases-knative.dev-serving-cmd-queue
   name: gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:d066ae5b642885827506610ae25728d442ce11447b82df6e9cc4c174bb97ecb3
+- aliyun: synced
+  aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-tensorflow-1.15.2-notebook-cpu-1.0.0
+  name: gcr.io/kubeflow-images-public/tensorflow-1.15.2-notebook-cpu:1.0.0
+- aliyun: synced
+  aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:tensorflow-tensorflow-1.15.0-gpu-py3
+  name: tensorflow/tensorflow:1.15.0-gpu-py3
+- aliyun: synced
+  aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:benjamintanweihao-kubeflow-mnist
+  name: benjamintanweihao/kubeflow-mnist

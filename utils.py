@@ -53,13 +53,19 @@ def get_aliyun_tags():
     except ClientException as e:
         print(e)
 
-def load_images(filename='images.yaml'):
+def load_yaml(filename):
     with open(filename) as f:
-        return yaml.load(f.read(), Loader=yaml.BaseLoader)['images']
+        return yaml.load_all(f.read(), Loader=yaml.BaseLoader)
+
+def save_yaml(filename, ds):
+    with open(filename, 'w') as f:
+        yaml.dump_all(ds, f, default_flow_style=False)
+
+def load_images(filename='images.yaml'):
+    return list(load_yaml(filename))[0]['images']
 
 def save_images(d, filename='images.yaml'):
-    with open(filename, 'w') as f:
-        yaml.dump({'images' : d}, f)
+    save_yaml(filename, [{'images' : d}])
 
 def get_dockerhub_tags():
     url = 'https://registry.hub.docker.com/v2/repositories/dockerkleon/k8s/tags?page_size=1024'
