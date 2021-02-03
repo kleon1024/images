@@ -31,5 +31,7 @@ jobs:
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        DOCKER_PREFIX: ${{ secrets.DOCKER_PREFIX }}
+        IMAGE_STATUS: ${{ secrets.IMAGE_STATUS }}
       run: |
         python sync.py
