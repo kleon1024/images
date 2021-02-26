@@ -25,5 +25,9 @@ for entry in images:
     subprocess.run(cmd)
     cmd = ['sudo', 'docker', 'tag', image, relabel_image]
     subprocess.run(cmd)
-    client.images.push(PREFIX, tag=relabel, auth_config=AUTH_CONFIG)
+    cmd = ['sudo', 'docker', 'login', '--username=' + AUTH_CONFIG['username'], '--password=' + AUTH_CONFIG['password'], PREFIX.split('/')[0]]
+    subprocess.run(cmd)
+    cmd = ['sudo', 'docker', 'push', PREFIX + ":" + relabel]
+    subprocess.run(cmd)
+    #client.images.push(PREFIX, tag=relabel, auth_config=AUTH_CONFIG)
 

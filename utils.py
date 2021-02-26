@@ -12,6 +12,7 @@ from aliyunsdkcr.request.v20160607 import GetRepoTagsRequest
 
 AK = os.getenv('AK')
 AS = os.getenv('AS')
+REGION = os.getenv('DOCKER_REGION')
 PREFIX = os.getenv('DOCKER_PREFIX')
 STATUS = os.getenv('IMAGE_STATUS')
 AUTH_CONFIG = {
@@ -34,19 +35,26 @@ def split_image(image):
     return image_repo, image_tag
 
 def get_aliyun_tags():
-    client = AcsClient(AK, AS, 'cn-shanghai')
+    client = AcsClient(AK, AS, REGION)
 
     request = GetRepoTagsRequest.GetRepoTagsRequest()
     request.set_RepoNamespace("pai_product")
     request.set_RepoName("k8s")
-    request.set_endpoint("cr.cn-shanghai.aliyuncs.com")
+    request.set_endpoint("cr."+REGION+".aliyuncs.com")
 
     try:
-        response = client.do_action_with_exception(request)
-        response = json.loads(response)
+        i = 0
         tags = set()
-        for tag in response['data']['tags']:
-            tags.add(tag['tag'])
+        while(True):
+            i += 1
+            request.set_Page(i)
+            request.set_PageSize(100)
+            response = client.do_action_with_exception(request)
+            response = json.loads(response)
+            if len(response['data']['tags']) == 0:
+                break
+            for tag in response['data']['tags']:
+                tags.add(tag['tag'])
         return tags
     except ServerException as e:
         print(e)
