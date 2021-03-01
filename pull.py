@@ -30,7 +30,7 @@ def pull(args):
     tars = []
     if not args.dry_run and not os.path.exists(args.folder):
         os.makedirs(args.folder)
-    for image in args.images.split(','):
+    for image in args.images:
         save_file = os.path.join(args.folder, gen_tag(image) + ".tar.gz")
         tars.append(save_file)
         if image not in synced_images:
@@ -73,7 +73,7 @@ if __name__ == "__main__":
     parser.add_argument('--cluster-hosts', default='hosts.txt', help='cluster hosts file')
     parser.add_argument('--folder', default='images', help='local folder save docekr image tar')
     parser.add_argument('--script', default='pull.sh', help='temp script')
-    parser.add_argument('images', help='images, separate by COMMA')
+    parser.add_argument('images', metavar='N', nargs='+', help='images')
     args = parser.parse_args()
 
     pull(args)
