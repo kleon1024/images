@@ -1,267 +1,401 @@
 images:
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:busybox
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:busybox
   name: busybox
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:k8s.gcr.io-kubernetes-dashboard-amd64-v1.10.1
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:k8s.gcr.io-kubernetes-dashboard-amd64-v1.10.1
   name: k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1
   status: synced
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-admission-webhook-vmaster-ge5452b6f
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kubeflow-images-public-admission-webhook-vmaster-ge5452b6f
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-admission-webhook-vmaster-ge5452b6f
   name: gcr.io/kubeflow-images-public/admission-webhook:vmaster-ge5452b6f
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-cache-deployer-1.0.4
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-cache-deployer-1.0.4
   name: gcr.io/ml-pipeline/cache-deployer:1.0.4
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-cache-server-1.0.4
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-cache-server-1.0.4
   name: gcr.io/ml-pipeline/cache-server:1.0.4
   status: synced
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-centraldashboard-vmaster-g8097cfeb
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kubeflow-images-public-centraldashboard-vmaster-g8097cfeb
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-centraldashboard-vmaster-g8097cfeb
   name: gcr.io/kubeflow-images-public/centraldashboard:vmaster-g8097cfeb
   status: synced
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-jupyter-web-app-vmaster-ge4456300
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kubeflow-images-public-jupyter-web-app-vmaster-ge4456300
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-jupyter-web-app-vmaster-ge4456300
   name: gcr.io/kubeflow-images-public/jupyter-web-app:vmaster-ge4456300
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-minio-RELEASE.2019-08-14T20-37-41Z-license-compliance
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-minio-RELEASE.2019-08-14T20-37-41Z-license-compliance
   name: gcr.io/ml-pipeline/minio:RELEASE.2019-08-14T20-37-41Z-license-compliance
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-api-server-1.0.4
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-api-server-1.0.4
   name: gcr.io/ml-pipeline/api-server:1.0.4
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-persistenceagent-1.0.4
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-persistenceagent-1.0.4
   name: gcr.io/ml-pipeline/persistenceagent:1.0.4
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-scheduledworkflow-1.0.4
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-scheduledworkflow-1.0.4
   name: gcr.io/ml-pipeline/scheduledworkflow:1.0.4
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-frontend-1.0.4
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-frontend-1.0.4
   name: gcr.io/ml-pipeline/frontend:1.0.4
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-viewer-crd-controller-1.0.4
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-viewer-crd-controller-1.0.4
   name: gcr.io/ml-pipeline/viewer-crd-controller:1.0.4
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-visualization-server-1.0.4
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-visualization-server-1.0.4
   name: gcr.io/ml-pipeline/visualization-server:1.0.4
   status: synced
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-notebook-controller-vmaster-g6eb007d0
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kubeflow-images-public-notebook-controller-vmaster-g6eb007d0
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-notebook-controller-vmaster-g6eb007d0
   name: gcr.io/kubeflow-images-public/notebook-controller:vmaster-g6eb007d0
   status: synced
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-kfam-vmaster-g9f3bfd00
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kubeflow-images-public-kfam-vmaster-g9f3bfd00
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-kfam-vmaster-g9f3bfd00
   name: gcr.io/kubeflow-images-public/kfam:vmaster-g9f3bfd00
   status: synced
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-pytorch-operator-vmaster-g518f9c76
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kubeflow-images-public-pytorch-operator-vmaster-g518f9c76
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-pytorch-operator-vmaster-g518f9c76
   name: gcr.io/kubeflow-images-public/pytorch-operator:vmaster-g518f9c76
   status: synced
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-spark-operator-spark-operator-v1beta2-1.1.0-2.4.5
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-spark-operator-spark-operator-v1beta2-1.1.0-2.4.5
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-spark-operator-spark-operator-v1beta2-1.1.0-2.4.5
   name: gcr.io/spark-operator/spark-operator:v1beta2-1.1.0-2.4.5
   status: synced
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-google_containers-spartakus-amd64-v1.1.0
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-google_containers-spartakus-amd64-v1.1.0
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-google_containers-spartakus-amd64-v1.1.0
   name: gcr.io/google_containers/spartakus-amd64:v1.1.0
   status: synced
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-tf_operator-vmaster-gda226016
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kubeflow-images-public-tf_operator-vmaster-gda226016
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-tf_operator-vmaster-gda226016
   name: gcr.io/kubeflow-images-public/tf_operator:vmaster-gda226016
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:k8s.gcr.io-kube-apiserver-v1.18.15
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:k8s.gcr.io-kube-apiserver-v1.18.15
   name: k8s.gcr.io/kube-apiserver:v1.18.15
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:k8s.gcr.io-kube-controller-manager-v1.18.15
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:k8s.gcr.io-kube-controller-manager-v1.18.15
   name: k8s.gcr.io/kube-controller-manager:v1.18.15
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:k8s.gcr.io-kube-scheduler-v1.18.15
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:k8s.gcr.io-kube-scheduler-v1.18.15
   name: k8s.gcr.io/kube-scheduler:v1.18.15
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:k8s.gcr.io-kube-proxy-v1.18.15
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:k8s.gcr.io-kube-proxy-v1.18.15
   name: k8s.gcr.io/kube-proxy:v1.18.15
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:k8s.gcr.io-pause-3.2
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:k8s.gcr.io-pause-3.2
   name: k8s.gcr.io/pause:3.2
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:k8s.gcr.io-etcd-3.4.3-0
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:k8s.gcr.io-etcd-3.4.3-0
   name: k8s.gcr.io/etcd:3.4.3-0
   status: synced
 - aliyun: synced
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:k8s.gcr.io-coredns-1.6.7
   hub: synced
   image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:k8s.gcr.io-coredns-1.6.7
   name: k8s.gcr.io/coredns:1.6.7
   status: synced
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kfserving-kfserving-controller-v0.3.0
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kfserving-kfserving-controller-v0.3.0
   name: gcr.io/kfserving/kfserving-controller:v0.3.0
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubebuilder-kube-rbac-proxy-v0.4.0
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kubebuilder-kube-rbac-proxy-v0.4.0
   name: gcr.io/kubebuilder/kube-rbac-proxy:v0.4.0
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-ingress-setup-latest
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kubeflow-images-public-ingress-setup-latest
   name: gcr.io/kubeflow-images-public/ingress-setup:latest
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-kubernetes-sigs-application-1.0-beta
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kubeflow-images-public-kubernetes-sigs-application-1.0-beta
   name: gcr.io/kubeflow-images-public/kubernetes-sigs/application:1.0-beta
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-profile-controller-vmaster-ga49f658f
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-kubeflow-images-public-profile-controller-vmaster-ga49f658f
   name: gcr.io/kubeflow-images-public/profile-controller:vmaster-ga49f658f
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-api-server-0.2.5
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-api-server-0.2.5
   name: gcr.io/ml-pipeline/api-server:0.2.5
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-envoy-metadata-grpc
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-envoy-metadata-grpc
   name: gcr.io/ml-pipeline/envoy:metadata-grpc
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-frontend-0.2.5
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-frontend-0.2.5
   name: gcr.io/ml-pipeline/frontend:0.2.5
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-persistenceagent-0.2.5
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-persistenceagent-0.2.5
   name: gcr.io/ml-pipeline/persistenceagent:0.2.5
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-scheduledworkflow-0.2.5
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-scheduledworkflow-0.2.5
   name: gcr.io/ml-pipeline/scheduledworkflow:0.2.5
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-viewer-crd-controller-0.2.5
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-viewer-crd-controller-0.2.5
   name: gcr.io/ml-pipeline/viewer-crd-controller:0.2.5
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-ml-pipeline-visualization-server-0.2.5
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-ml-pipeline-visualization-server-0.2.5
   name: gcr.io/ml-pipeline/visualization-server:0.2.5
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-tfx-oss-public-ml_metadata_store_server-v0.21.1
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-tfx-oss-public-ml_metadata_store_server-v0.21.1
   name: gcr.io/tfx-oss-public/ml_metadata_store_server:v0.21.1
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:quay.io-jetstack-cert-manager-cainjector-v0.11.0
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:quay.io-jetstack-cert-manager-cainjector-v0.11.0
   name: quay.io/jetstack/cert-manager-cainjector:v0.11.0
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:quay.io-jetstack-cert-manager-controller-v0.11.0
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:quay.io-jetstack-cert-manager-controller-v0.11.0
   name: quay.io/jetstack/cert-manager-controller:v0.11.0
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:quay.io-jetstack-cert-manager-webhook-v0.11.0
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:quay.io-jetstack-cert-manager-webhook-v0.11.0
   name: quay.io/jetstack/cert-manager-webhook:v0.11.0
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-knative-releases-knative.dev-net-istio-cmd-controller
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-knative-releases-knative.dev-net-istio-cmd-controller
   name: gcr.io/knative-releases/knative.dev/net-istio/cmd/controller@sha256:75c7918ca887622e7242ec1965f87036db1dc462464810b72735a8e64111f6f7
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-knative-releases-knative.dev-net-istio-cmd-webhook
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-knative-releases-knative.dev-net-istio-cmd-webhook
   name: gcr.io/knative-releases/knative.dev/net-istio/cmd/webhook@sha256:e6b142c0f82e0e0b8cb670c11eb4eef6ded827f98761bbf4bea7bdb777b80092
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-knative-releases-knative.dev-serving-cmd-activator
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-knative-releases-knative.dev-serving-cmd-activator
   name: gcr.io/knative-releases/knative.dev/serving/cmd/activator@sha256:ffa3d72ee6c2eeb2357999248191a643405288061b7080381f22875cb703e929
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-knative-releases-knative.dev-serving-cmd-autoscaler
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-knative-releases-knative.dev-serving-cmd-autoscaler
   name: gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler@sha256:f89fd23889c3e0ca3d8e42c9b189dc2f93aa5b3a91c64e8aab75e952a210eeb3
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-knative-releases-knative.dev-serving-cmd-controller
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-knative-releases-knative.dev-serving-cmd-controller
   name: gcr.io/knative-releases/knative.dev/serving/cmd/controller@sha256:b86ac8ecc6b2688a0e0b9cb68298220a752125d0a048b8edf2cf42403224393c
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-knative-releases-knative.dev-serving-cmd-webhook
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-knative-releases-knative.dev-serving-cmd-webhook
   name: gcr.io/knative-releases/knative.dev/serving/cmd/webhook@sha256:7e6df0fda229a13219bbc90ff72a10434a0c64cd7fe13dc534b914247d1087f4
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:docker.io-istio-proxyv2-1.3.1
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:docker.io-istio-proxyv2-1.3.1
   name: docker.io/istio/proxyv2:1.3.1
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:docker.io-library-centos-latest
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:docker.io-library-centos-latest
   name: docker.io/library/centos:latest
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:docker.io-library-nginx-latest
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:docker.io-library-nginx-latest
   name: docker.io/library/nginx:latest
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:docker.io-prom-prometheus-v2.8.0
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:docker.io-prom-prometheus-v2.8.0
   name: docker.io/prom/prometheus:v2.8.0
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-istio-release-citadel-release-1.3-latest-daily
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-istio-release-citadel-release-1.3-latest-daily
   name: gcr.io/istio-release/citadel:release-1.3-latest-daily
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-istio-release-galley-release-1.3-latest-daily
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-istio-release-galley-release-1.3-latest-daily
   name: gcr.io/istio-release/galley:release-1.3-latest-daily
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-istio-release-kubectl-release-1.3-latest-daily
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-istio-release-kubectl-release-1.3-latest-daily
   name: gcr.io/istio-release/kubectl:release-1.3-latest-daily
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-istio-release-mixer-release-1.3-latest-daily
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-istio-release-mixer-release-1.3-latest-daily
   name: gcr.io/istio-release/mixer:release-1.3-latest-daily
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-istio-release-node-agent-k8s-release-1.3-latest-daily
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-istio-release-node-agent-k8s-release-1.3-latest-daily
   name: gcr.io/istio-release/node-agent-k8s:release-1.3-latest-daily
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-istio-release-pilot-release-1.3-latest-daily
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-istio-release-pilot-release-1.3-latest-daily
   name: gcr.io/istio-release/pilot:release-1.3-latest-daily
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-istio-release-proxyv2-release-1.3-latest-daily
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-istio-release-proxyv2-release-1.3-latest-daily
   name: gcr.io/istio-release/proxyv2:release-1.3-latest-daily
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-istio-release-sidecar_injector-release-1.3-latest-daily
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-istio-release-sidecar_injector-release-1.3-latest-daily
   name: gcr.io/istio-release/sidecar_injector:release-1.3-latest-daily
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:istio-proxyv2-1.3.1
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:istio-proxyv2-1.3.1
   name: istio/proxyv2:1.3.1
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:kubernetesui-dashboard-v2.0.0-beta8
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:kubernetesui-dashboard-v2.0.0-beta8
   name: kubernetesui/dashboard:v2.0.0-beta8
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:kubernetesui-metrics-scraper-v1.0.1
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:kubernetesui-metrics-scraper-v1.0.1
   name: kubernetesui/metrics-scraper:v1.0.1
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:mysql-5.6
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:mysql-5.6
   name: mysql:5.6
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:nginx-latest
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:nginx-latest
   name: nginx:latest
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-knative-releases-knative.dev-serving-cmd-queue
+  dockerhub: synced
+  dockerhub_image: dockerkleon/k8s:gcr.io-knative-releases-knative.dev-serving-cmd-queue
   name: gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:d066ae5b642885827506610ae25728d442ce11447b82df6e9cc4c174bb97ecb3
 - aliyun: synced
   aliyun_image: registry.cn-shanghai.aliyuncs.com/pai_product/k8s:gcr.io-kubeflow-images-public-tensorflow-1.15.2-notebook-cpu-1.0.0
